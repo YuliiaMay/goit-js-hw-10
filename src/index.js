@@ -1,7 +1,7 @@
 import './css/styles.css';
 import { fetchCountries } from './fetchCountries';
 import debounce from 'lodash.debounce';
-import Notiflix from 'notiflix';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 
 const refs = {
@@ -29,7 +29,7 @@ function onInputChange(e) {
             console.log(response.length);
 
             if (response.length > 10) {
-                Notiflix.Notify.warning('Too many matches found. Please enter a more specific name.');
+                Notify.warning('Too many matches found. Please enter a more specific name.');
             } else if (response.length >= 2 && response.length < 10) {
                 createListMarkup(response);
                 refs.info.innerHTML = '';
@@ -39,8 +39,7 @@ function onInputChange(e) {
             };
         })
         .catch(error => {
-            console.error();
-            Notiflix.Notify.failure('Oops, there is no country with that name');
+            Notify.failure('Oops, there is no country with that name');
         });  
 };
 
