@@ -47,7 +47,7 @@ body {
   list-style: none;
   padding-left: 0;
   width: 450px;
-  background-color: #98ceef;
+  background-color: #98ceefc0;
 }
 
 .country-item {
@@ -61,14 +61,12 @@ body {
   gap: 10px;
 }
 
-
 .country-info {
   margin-top: 0;
   width: 450px;
-  background-color: #98ceef;
+  background-color: #98ceefc0;
   border: 1px solid #00bfff;
 }
-
 
 .img {
   max-width: 300px;
