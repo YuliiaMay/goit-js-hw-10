@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://YuliiaMay.github.io/goit-js-hw-10",
   "scripts": {
-    "start": "parcel *.html",
+    "start": "parcel src/*.html",
     "build": "parcel build *.html --public-url /goit-js-hw-10/"
   },
   "repository": {
