@@ -30,7 +30,7 @@ function onInputChange(e) {
             if (response.length > 10) {
                 Notify.warning('Too many matches found. Please enter a more specific name.');
 
-            } else if (response.length >= 2 && response.length < 10) {
+            } else if (response.length >= 2 && response.length <= 10) {
                 createListMarkup(response);
                 refs.info.innerHTML = '';
                 
